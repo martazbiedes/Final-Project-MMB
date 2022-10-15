@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Logo from '../resources/logopoke.png'
+import Logo from '.png'
 import {BsCart3} from 'react-icons/bs'
 
 export default function Navigation() {
@@ -19,10 +19,10 @@ export default function Navigation() {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="flex-grow-1 justify-content-evenly">
                         <Nav.Link href="#Home">Home</Nav.Link>
-                        <Nav.Link href="#AboutUs">About Us</Nav.Link>
-                        <NavDropdown title="Products" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#Product">Pokemon</NavDropdown.Item>
-                            <NavDropdown.Item href="#Accessories">Accessories</NavDropdown.Item>
+                        <Nav.Link href="#Resources">Resources</Nav.Link>
+                        <NavDropdown title="Resources" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#Blog">Blog</NavDropdown.Item>
+                            <NavDropdown.Item href="#Tips">Tips</NavDropdown.Item>
                         </NavDropdown>
                         </Nav>
                         <Form className="d-flex">
@@ -35,9 +35,6 @@ export default function Navigation() {
                             <Button size="sm" variant="outline-primary">Search</Button>
                         </Form>
                     </Navbar.Collapse>
-                    <Nav className="flex-grow-1 justify-content-evenly">
-                        <Nav.Link href="#Cart">View Cart <BsCart3 /></Nav.Link>
-                    </Nav>
                 </Container>
             </Navbar>
             <Navbar style={{justifyContent: 'center', backgroundColor: '#A0522D', height: '30px'}} sticky="top">
